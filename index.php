@@ -6,7 +6,7 @@
 
 <?php
 $file = fopen("./raw_post_data.log","w");
-echo fwrite($file,date("Y-m-d H:i:s"));
+echo fwrite($file);
 fclose($file);
 ?>
 

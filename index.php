@@ -5,9 +5,7 @@
 <h1>openlog</h1>
 
 <?php
-$file = fopen("./raw_post_data.txt","w");
-echo fwrite($file);
-fclose($file);
+echo file_get_contents("./raw_post_data.txt");
 ?>
 
 </body>

@@ -31,7 +31,7 @@ $raw_post_data = file_get_contents('php://input');
 echo $strtime , '#post body:' , $raw_post_data , "\r\n";
 
 // 记录信息
-file_put_contents("./raw_post_data.log","$raw_post_data\r\n",FILE_APPEND);
+file_put_contents("./raw_post_data.txt","$raw_post_data\r\n",FILE_APPEND);
 ?>
 
 

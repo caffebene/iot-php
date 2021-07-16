@@ -5,7 +5,7 @@
 <h1>openlog</h1>
 
 <?php
-$file = fopen("/log/raw_post_data.log","w");
+$file = fopen("./raw_post_data.log","w");
 echo fwrite($file,date("Y-m-d H:i:s"));
 fclose($file);
 ?>

@@ -32,7 +32,7 @@ echo $strtime , '#post body:' , $raw_post_data , "\r\n";
 
 // 记录信息
 // file_put_contents("./raw_post_data.txt","$raw_post_data\r\n",FILE_APPEND);
-file_put_contents("raw_post_data.txt", "$raw_post_data\r\n", FILE_APPEND | LOCK_EX);
+file_put_contents("raw_post_data.log", "$strtime DATA: $raw_post_data\r\n", FILE_APPEND | LOCK_EX);
 ?>
 
 

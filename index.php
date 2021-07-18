@@ -5,7 +5,7 @@
 <h1>openlog</h1>
 
 <?php
-echo file_get_contents("./raw_post_data.txt");
+echo file_get_contents("./raw_post_data.log");
 ?>
 
 </body>

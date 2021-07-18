@@ -18,7 +18,7 @@ document.write(document.URL+"post.php");
 <h2>Post记录</h2>
 <button onClick="document.location.reload()">刷新</button>
 <?php
-$file = fopen("raw_post_data.txt","r") or die("Unable to open file!");
+$file = fopen("raw_post_data.txt","r") or die("请先完成前置步骤，完成设备状态的同步");
 // 输出单行直到 end-of-file
 while(!feof($file)) {
     echo fgets($file) . "<br>";

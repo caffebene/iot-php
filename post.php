@@ -7,10 +7,12 @@
 <?php
 // 接收Post数据
 $raw_post_data = file_get_contents('php://input');
+// 获取当前时间
+$time = date("Y-m-d H:i:s");
 // 输出数据
 echo $strtime , '#post body:' , $raw_post_data , "\r\n";
 // 记录信息
-file_put_contents("raw_post_data.txt", "$strtime date("Y-m-d H:i:s"): $raw_post_data\r\n", FILE_APPEND | LOCK_EX);
+file_put_contents("raw_post_data.txt", "$time DATA: $raw_post_data\r\n", FILE_APPEND | LOCK_EX);
 ?>
 
 

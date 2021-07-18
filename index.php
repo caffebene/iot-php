@@ -16,7 +16,7 @@ document.write(document.URL+"post.php");
 <p>步骤3：通过<a href="https://cloud.tencent.com/document/product/1081/34741">虚拟设备调试</a>功能或绑定真实设备完成设备数据上报。</p>
 <p>完成上述步骤后，即可于下方查看由物联网开发平台所转发的设备状态数据。</p>
 <h2>Post记录</h2>
-<button onClick="document.location.reload()">刷新</button>
+<button onClick="document.location.reload()">刷新</button><br>
 <?php
 $file = fopen("raw_post_data.txt","r") or die("请先完成前置步骤，完成设备状态的同步");
 // 输出单行直到 end-of-file

@@ -7,8 +7,8 @@
 <?php
 //echo file_get_contents("./raw_post_data.log");
 
-$file = fopen("/log/raw_post_data.log","w");
-echo fwrite($file,date("Y-m-d H:i:s"));
+$file = fopen("raw_post_data.log","w");
+echo fwrite($file);
 fclose($file);
 
 ?>

@@ -6,6 +6,8 @@
 <head> 
 <body>
 <h1 style="text-align:center;">欢迎使用物联使能应用托管Demo</h1>
+<h2>源码下载</h2>
+<p>若需要基于本示例拓展更多功能，可 <a href="source.zip">下载源码</a> 进行定制化开发。</p>
 <h2>前置步骤</h2>
 <p>本示例将输出由物联网开发平台所转发的设备状态数据。请确认完成如下前置步骤：</p>
 <p>步骤1：通过 <a href="https://console.cloud.tencent.com/iotexplorer">物联网开发平台</a> 的 <a href="https://cloud.tencent.com/document/product/1081/34739">产品开发</a> 功能完成产品的开发；</p>
@@ -29,7 +31,5 @@ while(!feof($file)) {
   }
 fclose($file);
 ?>
-<h2>源码下载</h2>
-<p>若需要基于本示例拓展更多功能，可 <a href="source.zip">下载源码</a> 进行定制化开发。</p>
 </body>
 </html>

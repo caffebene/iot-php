@@ -5,6 +5,7 @@
 <h1>接收Post数据</h1>
 
 <?php
+date_default_timezone_set("PRC");
 // 接收Post数据
 $raw_post_data = file_get_contents('php://input');
 // 获取当前时间
